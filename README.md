@@ -49,3 +49,10 @@ evidence, under `~/.assay-mcp/answers/`. Assay's terms: https://assay.cascadiant
 
 Assay is run by Cascadian Tech LLC (https://assay.cascadiantech.com, assay@cascadiantech.com). This client is MIT
 licensed; each paid call is a purchase from Assay under its terms. It is not on PyPI yet.
+
+## Spend control for your own agents
+
+Assay pays for its own model calls through a spend-control ledger: allow, deny or hold before anything is
+signed, hard caps no approval can lift, a named approver on every exception, and a hash-chained log that shows
+if anyone edits it afterwards. If you'd want that, or the evidence report it produces, for your own agents,
+[tell us here](../../issues/new?template=ledger-interest.md).
