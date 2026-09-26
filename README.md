@@ -1,8 +1,7 @@
 # assay-mcp
 
 Assay's two paid answers as MCP tools, paid per call in USDC on Base from **your own wallet**, under a **daily limit
-you set**. It is a local stdio MCP server, the kind Claude Desktop, Claude Code and Cursor launch from their
-`mcpServers` configuration. It has been tested over stdio with the MCP Python SDK's client; if your client has
+you set**. It is a local stdio MCP server, tested over stdio with the MCP Python SDK's client; if your MCP client has
 trouble with it, open an issue.
 
 | tool | what | cost |
@@ -17,8 +16,7 @@ trouble with it, open an issue.
    client's configuration. x402 payments need no ETH for gas.
 2. Choose your daily limit in USD. There is no default: the server will not start without one.
 
-Add it to your MCP client's configuration (Claude Desktop: `claude_desktop_config.json`; Cursor and others have the
-same `mcpServers` block). It needs [uv](https://docs.astral.sh/uv/):
+Add it to your MCP client's `mcpServers` configuration. It needs [uv](https://docs.astral.sh/uv/):
 
 ```json
 {
