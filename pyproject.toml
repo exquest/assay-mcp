@@ -1,0 +1,19 @@
+[project]
+name = "assay-mcp"
+version = "0.1.0"
+description = "Assay's paid endpoints as MCP tools, paid per call in USDC on Base from your own wallet, under a daily limit you set"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+dependencies = ["mcp>=2.2,<3", "x402[evm,requests]>=2.24,<3", "requests>=2.31"]
+
+[project.scripts]
+assay-mcp = "assay_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["assay_mcp"]
